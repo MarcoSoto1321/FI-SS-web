@@ -5,6 +5,15 @@ class HeaderComponent extends HTMLElement {
 
     connectedCallback() {
         this.innerHTML = `
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Inicio</title>
+            <link rel="stylesheet" href="/src/css/header.css">
+        </head>
+        <body>
             <header>
                 <div class="encabezado-escudos">
                     <div class="header-content">
@@ -18,6 +27,7 @@ class HeaderComponent extends HTMLElement {
                     </div>
                 </div>
             </header>
+        <body>
         `;
     }
 }
