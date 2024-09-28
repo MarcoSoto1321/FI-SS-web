@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Encabezado de la página */
+header {
+    width: 100%;
+    background-color: #F2F2F2; 
+    padding: 1rem 0;
+}
+
+.encabezado-escudos {
+    max-width: 1920px;/*Tamaño maximo de pixeles tomando en cuenta res 1920x1080*/
+    margin: 0px auto;
+    padding: 0 1rem;
+    background-color: transparent;/*Color que tendrá el fondo del encabezado*/
+}
+
+.header-content {/*Espaciado para que los logos esten de lados contrarios*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.izquierda{/* Alineación para los escudos de lado izquierdp*/
+    display: flex;
+    gap: 1rem;
+}
+
+.derecha {/* Alineación para el logo de lado derecho*/
+    display: flex;
+    gap: 1rem;
+}
+
+.escudo {/*tamaño para cada uno de lo sescudos y logos*/
+    width: 100%;
+    height: 100px;
+    border-radius: 0%;
+    object-fit: cover;
+}
