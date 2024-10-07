@@ -21,6 +21,7 @@ class HeaderComponent extends HTMLElement {
                             <a href="https://www.unam.mx/"><img src="/src/images/Encabezado/UNAM.png" alt="Escudo 1" class="escudo"></img></a>
                             <a href="https://www.ingenieria.unam.mx/"><img src="/src/images/Encabezado/FI.png" alt="Escudo 2" class="escudo"></img></a>
                         </div>
+                        <h1 class = "titulo-header">Transformación Digital</h1>
                         <div class="derecha">
                             <img src="/src/images/Encabezado/logo_die2.png" alt="Escudo 3" class="escudo"></img>
                         </div>

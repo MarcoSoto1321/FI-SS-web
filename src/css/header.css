@@ -45,3 +45,14 @@ header {
     border-radius: 0%;
     object-fit: cover;
 }
+
+.titulo-header{
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .titulo-header{
+        display: none;
+    }
+}
