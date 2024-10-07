@@ -1,14 +1,17 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f4f8;
     margin: 0;
-    padding: 0px;
-    color: #333;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    background: #fff; 
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
+    url('/src/images/background/1.webp');
+    background-size: cover;
+    background-position: center;
 }
 
 .organigrama {
     padding-top: 60px;
-    background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }

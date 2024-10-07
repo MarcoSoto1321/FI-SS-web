@@ -6,6 +6,10 @@ body {
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
     background: #fff; 
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
+    url('/src/images/background/1.webp');
+    background-size: cover;
+    background-position: center;
 }
 
 .content {
@@ -305,6 +309,7 @@ body {
     background: white;
     padding: 0 15px;
     margin: 0;
+    border: #000 2px solid;
 }
 
 /* 
