@@ -4,83 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
-    <link rel="stylesheet" href="src/css/header.css">
-    <link rel="stylesheet" href="src/css/footer.css">
-    <link rel="stylesheet" href="src/css/navbar.css">
-    <link rel="stylesheet" href="src/css/organigrama.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/organigrama.css">
 </head>
 <body>
     <!--Escudos /script/components/header-->
-    <header>
-        <div class="encabezado-escudos">
-            <div class="header-content">
-                <div class="izquierda">
-                    <a href="https://www.unam.mx/"><img src="/src/images/Encabezado/UNAM.png" alt="Escudo 1" class="escudo"></img></a>
-                    <a href="https://www.ingenieria.unam.mx/"><img src="/src/images/Encabezado/FI.png" alt="Escudo 2" class="escudo"></img></a>
-                </div>
-                <h1 class = "titulo-header">Transformación Digital</h1>
-                <div class="derecha">
-                    <img src="/src/images/Encabezado/logo_die2.png" alt="Escudo 3" class="escudo"></img>
-                </div>
-            </div>
-        </div>
-    </header>
+    <header-component></header-component>
     <!--Barra de Navegación /script/components/navbar-->
-    <nav class="navbar">
-        <div class="hamburguer">☰</div>
-        <ul class="nav-list">
-            <li class="nav-item">
-                <a href="/index.html" class="nav-link">Inicio</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">organización </a>
-                <ul class="dropdown">
-                    <li class="dropdown-item">
-                        <a href="/src/pages/organizacion-mision.html" class="dropdown-link">Misión</a>
-                    </li>
-                    <li class="dropdown-item">
-                        <a href="/src/pages/organizacion-organigrama.html" class="dropdown-link">Organigrama</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <a href="/src/pages/pc-puma.html" class="nav-link">PC puma</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Programa de Becarios</a>
-                <ul class="dropdown">
-                    <li class="dropdown-item">
-                        <a href="/src/pages/becarios-registro.html" class="dropdown-link">Registro</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Cursos</a>
-                <ul class="dropdown">
-                    <li class="dropdown-item">
-                        <a href="/src/pages/cursos-calendario.html" class="dropdown-link">Calendario</a>
-                    </li>
-                    <li class="dropdown-item">
-                        <a href="/src/pages/cursos-temario.html" class="dropdown-link">Temario</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Plataformas Educativas</a>
-                <ul class="dropdown">
-                    <li class="dropdown-item">
-                        <a href="/src/pages/plataformas-educafi.html" class="dropdown-link">EDUCAFI</a>
-                    </li>
-                    <li class="dropdown-item">
-                        <a href="/src/pages/plataformas-google-suite.htm" class="dropdown-link">Google Suite</a>
-                    </li>
-                    <li class="dropdown-item"></li>
-                        <a href="/src/pages/plataformas-office-365.html" class="dropdown-link">Office 365</a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
+    <navbar-component></navbar-component>
 
     <div class="organigrama">
         <div class="nivel nivel-1">
@@ -155,35 +88,12 @@
             </div>
         </div>
 
-        <footer class="footer">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h2 class="footer-title">Facultad de <span>Ingeniería</span></h2>
-                    <button class="contact-button">Contacto</button>
-                    <a class="privacy-notice">Aviso de Privacidad</a>
-                </div>
-                <div class="footer-section">
-                    <h3>Universidad Nacional Autónoma de México</h3>
-                    <p>Facultad de Ingeniería, Av. Universidad 3000,</p>
-                    <p>Ciudad Universitaria, Coyoacán, Cd. Mx., CP 04510</p>
-                    <p>Teléfono: 55 56 22 06 07</p>
-                    <p>eMail: fainge@unam.mx</p>
-                    <div class="social-icons">
-                        <a href="#">F</a>
-                        <a href="#">T</a>
-                        <a href="#">I</a>
-                        <a href="#">Y</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <div class="footer-bottom-content">
-                    <p class="small-text" >Todos los derechos reservados © 1999 - 2024 / Facultad de Ingeniería / UNAM /</p>
-                    <p class="small-text">Esta es la página electrónica institucional de la Facultad de Ingeniería de la UNAM. Puede ser reproducida con fines no lucrativos, siempre y cuando no se mutile, se cite la fuente completa y su dirección electrónica. Contiene enlaces con diversos portales de entidades y organizaciones académicas, estudiantiles y profesionales, así como con páginas personales de profesores e investigadores cuyos contenidos son de la responsabilidad exclusiva de sus titulares.</p>
-                    <p class="small-text">Última actualización 15-09-2024</p>
-                </div>
-            </div>
-        </footer>
+    <!--Escudos /script/components/footer-->
+    <footer-component></footer-component>
+
+    <script src="../script/components/header.js"></script>
+    <script src="../script/components/navbar.js"></script>
+    <script src="../script/components/footer.js"></script>
     
 </body>
 </html>
