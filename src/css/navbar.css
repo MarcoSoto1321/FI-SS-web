@@ -82,6 +82,10 @@ body {
     cursor: pointer;
 }
 
+.toggle {
+    display: none; /* Ocultar completamente */
+}
+
 @media (max-width: 768px){
     .nav-list{
         display: none;
@@ -89,4 +93,26 @@ body {
     .hamburguer{
         display: block;
     }
+
+   /* Mostrar la lista cuando el checkbox está marcado */
+   .toggle:checked + .hamburguer + .nav-list {
+        display: flex; /* Mostrar lista */
+        flex-direction: column;
+    }
+
+    .hamburguer {
+        display: block; /* Mostrar el botón hamburguesa */
+    }
+
+    .nav-item {
+        padding: 3px;
+    }
+}
+/* Estilos adicionales para dropdowns */
+.dropdown {
+    display: none; /* Ocultar dropdowns por defecto */
+}
+
+.nav-item:hover .dropdown {
+    display: block; /* Mostrar dropdown al pasar el mouse */
 }

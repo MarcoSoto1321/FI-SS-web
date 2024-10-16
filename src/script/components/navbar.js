@@ -21,7 +21,7 @@ class NavbarComponent extends HTMLElement {
                         <a href="../../index.html" class="nav-link">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">organización </a>
+                        <a href="#" class="nav-link">Organización </a>
                         <ul class="dropdown">
                             <li class="dropdown-item">
                                 <a href="../pages/organizacion-mision.html" class="dropdown-link">Misión</a>

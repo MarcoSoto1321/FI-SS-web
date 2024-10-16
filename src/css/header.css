@@ -61,4 +61,8 @@ header {
     .titulo-header{
         display: none;
     }
+    .escudo{
+        max-height: 15vw;
+        width: auto;
+    }
 }
