@@ -7,8 +7,8 @@ body {
     font-family: "Inter", sans-serif;
     background: #fff; 
     background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
-    url('/src/images/background/1.webp');
-    background-size: cover;
+    url(../images/background/1.webp);
+    background-size: auto 100%;
     background-position: center;
 }
 
@@ -386,7 +386,7 @@ body {
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: #007bff;
+    background-color: #193c6b;
     color: #fff;
     text-align: center;
     text-decoration: none;
@@ -397,7 +397,7 @@ body {
 }
 
 .btn:hover {
-    background-color: #0056b3;
+    background-color: #4b78b4;
 }
 
 @media (max-width: 768px) {

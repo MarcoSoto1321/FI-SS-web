@@ -5,8 +5,8 @@ body {
     font-family: "Inter", sans-serif;
     background: #fff; 
     background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
-    url('/src/images/background/1.webp');
-    background-size: cover;
+    url(../images/background/1.webp);
+    background-size: auto 100%;
     background-position: center;
 }
 
@@ -40,11 +40,11 @@ body {
 }
 
 .footer-title span {/*color para el segundo texto*/
-    color: #0A4359;
+    color: #cd171e;
 }
 
 .contact-button {
-    background-color: #0A4359;
+    background-color: #cd171e;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -63,7 +63,7 @@ body {
 }
 
 .footer-bottom {
-    background-color: #0A4359;
+    background-color: #cd171e;
     padding: 20px;
 }
 
