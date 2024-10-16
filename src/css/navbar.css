@@ -11,16 +11,16 @@ body {
     font-family: "Inter", sans-serif;
     background: #fff; 
     background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
-    url('/src/images/background/1.webp');
-    background-size: cover;
+    url(../images/background/1.webp);
+    background-size: auto 100%;
     background-position: center;
 }
 
 .navbar{
         background-color: #F2F2F2;
         padding: 0px 0;
-        border-top: 2.5px #0A4359 solid;
-        border-bottom: 2.5px #0A4359 solid;
+        border-top: 2.5px #cd171e solid;
+        border-bottom: 2.5px #cd171e solid;
 }
 
 .nav-list {
@@ -37,7 +37,7 @@ body {
 
 .nav-link {
     text-decoration: none;
-    color: #0A4359;
+    color: #cd171e;
     padding: 1rem 1.5rem;
     display: block;
 }
