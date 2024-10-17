@@ -15,7 +15,8 @@ class NavbarComponent extends HTMLElement {
         </head>
         <body>
             <nav class="navbar">
-                <div class="hamburguer">☰</div>
+                <input type="checkbox" id="toggle" class="toggle">
+                <label for="toggle" class="hamburguer">☰</label>
                 <ul class="nav-list">
                     <li class="nav-item">
                         <a href="../../index.html" class="nav-link">Inicio</a>
