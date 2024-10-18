@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+.plataforms_title {
+    font-family:Audiowide;
+    color:darkblue;
+    padding-bottom:20px;
+}
+
+.platforms_container{
+    background: white;
+}
+
+#cuerpo{
+    padding: 50px 50px 30px 30px;
+    
+}
+
+.platforms_h3{
+    font-size: 27px;
+}
+
+.text-info{
+    color: rgb(20, 164, 164);
+}
+
+a{
+    text-decoration: none;
+}
+
+.link-educafi{
+    font-size: 20px;
+}
