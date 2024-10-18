@@ -12,18 +12,18 @@ body {
 		rgba(148, 187, 233, 1) 100%
 	);
 }
-h1 {
+.calendar_h1 {
 	font-weight: 800;
 	margin: 1rem 0 0;
 }
 
-ul {
+.claendar_ul {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 	flex-wrap: wrap;
 	list-style: none;
 
-	li {
+li {
 		display: flex;
 		width: 10rem;
 		height: 10rem;
