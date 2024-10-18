@@ -1,0 +1,115 @@
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.course-section {
+    padding: 40px 20px; /* Aumentado el padding vertical y agregado padding horizontal */
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 2rem;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    max-width: 1200px; /* Limita el ancho máximo del grid */
+    margin: 0 auto; /* Centra el grid en pantallas más grandes */
+}
+
+.course-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-header {
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.card-duration {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.card-content {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.card-description {
+    color: #555;
+}
+
+.card-footer {
+    padding: 20px;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #193c6b;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #4b78b4;
+}
+
+@media (max-width: 768px) {
+    .course-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* 
+=======================================================================================
+===                                  SEPARADOR                                      ===
+=======================================================================================
+*/
+
+.separador {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.gradiente {
+    position: relative;
+    height: 2px;
+    background: linear-gradient(to right, #fff, #333, #fff);
+}
+
+.gradiente h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 0 15px;
+    margin: 0;
+    border: #000 2px solid;
+}
