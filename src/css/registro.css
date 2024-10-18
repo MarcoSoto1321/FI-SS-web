@@ -1,0 +1,57 @@
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    margin: 2vw 0;
+    width: 70%; /* Ajusta el formulario al 100% del contenedor */
+    padding-top: 2vw; /* Espaciado interno */
+    border: 1px #cd171e solid; /* Borde para distinguir el formulario */
+    border-radius: 8px; /* Bordes redondeados */
+    background-color: #fff; /* Color de fondo del formulario */
+}
+
+.elementos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+}
+
+.elementos div {
+    padding-top: 1vw;
+}
+
+.nombres {
+    display: flex;
+}
+
+.telefonos {
+    display: flex;
+}
+
+Button {
+    margin-top: 20px;
+}
+
+form div {
+    padding: .5vw;
+}
+
+@media screen and (max-width: 820px){
+    .nombres{
+        flex-direction: column;
+    }
+    .telefonos{
+        flex-direction: column;
+    }
+    form {
+        width: 90%;
+    }
+}
