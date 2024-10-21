@@ -50,13 +50,17 @@ body {
     display: none;
     position: absolute;
     background-color: #fff;
+    padding: 0;
+    margin: 0;
     box-shadow: 0 8px 16px rgba(0,0,0,0.1);
     z-index: 1;
     min-width: 200px;
+    list-style-type: none;
 }
 
 .dropdown-item {
     position: relative;
+
 }
 
 .dropdown-link {
@@ -72,6 +76,11 @@ body {
 
 .nav-item:hover > .dropdown,
 .dropdown-item{
+    display: block;
+    background-color: #F2F2F2;
+}
+
+.prueba{
     display: block;
     background-color: #F2F2F2;
 }

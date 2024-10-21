@@ -114,6 +114,10 @@ input[type="file"] {
     text-align: center;
 }
 
+.file-selected {
+    background: #1d467c; /* Cambia el color de fondo */
+}
+
 /* Estilo al pasar el mouse */
 .custom-file-label:hover {
     background: #1d467c;
