@@ -25,8 +25,8 @@ class FooterComponent extends HTMLElement {
                         <h3>Universidad Nacional Autónoma de México</h3>
                         <p>Facultad de Ingeniería, Av. Universidad 3000,</p>
                         <p>Ciudad Universitaria, Coyoacán, Cd. Mx., CP 04510</p>
-                        <p>Teléfono: 55 56 22 06 07</p>
-                        <p>eMail: fainge@unam.mx</p>
+                        <p>Teléfono: </p>
+                        <p>eMail: </p>
                         <div class="social-icons">
                             <a href="#">F</a>
                             <a href="#">T</a>

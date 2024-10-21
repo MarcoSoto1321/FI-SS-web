@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
-    <link rel="stylesheet" href="../css/index-content.css">
+    <link rel="stylesheet" href="../css/cursos.css">
     <link rel="stylesheet" href="../css/slider.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -15,14 +15,23 @@
     <navbar-component></navbar-component>
 
     <div class="content"></div>
-        <!-- Aquí iría el contenido de tu página -->
-        <h1>Contenido de la página</h1>
-        <p>Este es un ejemplo de contenido.</p>
+        <div class="separador gradiente">
+            <h2>Cursos</h2>
+        </div>
+
+        <section class="course-section">
+            <div class="container">
+                <div id="courseList" class="course-grid">
+                    <!-- Las tarjetas de cursos se generarán aquí dinámicamente -->
+                </div>
+            </div>
+        </section>
     </div>
 
     <!--Escudos /script/components/footer-->
     <footer-component></footer-component>
 
+    <script src="../script/cursos.js"></script>
     <script src="../script/components/header.js"></script>
     <script src="../script/components/navbar.js"></script>
     <script src="../script/components/footer.js"></script>
