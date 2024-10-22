@@ -33,7 +33,7 @@ class NavbarComponent extends HTMLElement {
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a href="../pages/pc-puma.html" class="nav-link">PC puma</a>
+                        <a href="https://pcpuma.unam.mx/" target="_blank" class="nav-link">PC puma</a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">Programa de Becarios</a>
