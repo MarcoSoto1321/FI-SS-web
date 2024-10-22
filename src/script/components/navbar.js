@@ -63,14 +63,14 @@ class NavbarComponent extends HTMLElement {
                             <li class="dropdown-item">
                                 <a href="../pages/plataformas-google-suite.html" class="dropdown-link">Google Suite</a>
                             </li>
-                            <li class="dropdown-item"></li>
+                            <li class="dropdown-item">
                                 <a href="../pages/plataformas-office-365.html" class="dropdown-link">Office 365</a>
                             </li>
                         </ul>
                     </li>
                 </ul>
             </nav>
-        <body>
+        </body>
         `;
     }
 }
