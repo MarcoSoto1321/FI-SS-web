@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+.plataforms_title {
+    font-family:Audiowide;
+    color:darkblue;
+    padding-bottom:5px;
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.platforms_container{
+    background: white;
+}
+
+#cuerpo{
+    padding: 50px 50px 30px 30px;
+    
+}
+
+.platforms_h3{
+    font-size: 27px;
+    margin-bottom: -10px;
+    margin-top: 40px;
+}
+
+.text-info{
+    color: rgb(20, 164, 164);
+}
+
+a{
+    text-decoration: none;
+}
+
+.link-educafi{
+    font-size: 20px;
+}
+
+.platforms_p{
+    font-size: 17px;
+}
+
+.platforms_li{
+    padding: 5px 10px;
+}
