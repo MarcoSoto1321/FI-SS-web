@@ -10,10 +10,10 @@ body {
     font-family: "Inter", sans-serif;
     background: #fff; 
     background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
-    url(../images/background/1.webp);
+    /* url(../images/background/1.webp);
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: fixed; */
 }
 
 .navbar {
@@ -81,11 +81,6 @@ body {
     display: block;
 }
 
-.prueba{
-    display: block;
-    background-color: #F2F2F2;
-}
-
 .hamburguer {
     display: none;
     font-size: 24px;
@@ -123,7 +118,7 @@ body {
 
     .nav-item:hover > .dropdown,
     .dropdown-item:hover > .dropdown {
-        display: none;
+        display: block;
     }
 
     .nav-item.active > .dropdown {
