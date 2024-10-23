@@ -36,17 +36,28 @@
 .card-header {
     padding: 20px;
     background-color: #f8f8f8;
+    background-size: cover;
 }
 
 .card-title {
     font-size: 1.2rem;
     color: #333;
+    text-shadow: 
+        -1.5px -1.5px 0 white,  
+        1.5px -1.5px 0 white,
+        -1.5px 1.5px 0 white,
+        1.5px 1.5px 0 white;
     margin-bottom: 5px;
 }
 
 .card-duration {
     font-size: 0.9rem;
-    color: #666;
+    color: #333;
+    text-shadow: 
+        -1px -1px 0 white,  
+        1px -1px 0 white,
+        -1px 1px 0 white,
+        1px 1px 0 white;
 }
 
 .card-content {
