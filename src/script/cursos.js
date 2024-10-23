@@ -1,27 +1,69 @@
+function parseCSV(text) {
+    const rows = [];
+    let inQuotes = false;
+    let currentRow = [];
+    let currentValue = '';
+
+    for (let i = 0; i < text.length; i++) {
+        const char = text[i];
+        const nextChar = text[i + 1];
+
+        if (char === '"') {
+            if (inQuotes && nextChar === '"') {
+                // Si estamos dentro de comillas y encontramos un doble ", es una comilla escapada
+                currentValue += '"';
+                i++;
+            } else {
+                // Alternamos el estado de las comillas
+                inQuotes = !inQuotes;
+            }
+        } else if (char === ',' && !inQuotes) {
+            // Si encontramos una coma fuera de comillas, es el separador de columnas
+            currentRow.push(currentValue.trim());
+            currentValue = '';
+        } else if (char === '\n' && !inQuotes) {
+            // Si encontramos un salto de línea fuera de comillas, es el fin de la fila
+            currentRow.push(currentValue.trim());
+            rows.push(currentRow);
+            currentRow = [];
+            currentValue = '';
+        } else {
+            // Si es cualquier otro carácter, lo añadimos al valor actual
+            currentValue += char;
+        }
+    }
+
+    // Añadir la última fila si no terminamos con un salto de línea
+    if (currentValue) {
+        currentRow.push(currentValue.trim());
+        rows.push(currentRow);
+    }
+
+    return rows;
+}
+
 async function loadCourses() {
     const response = await fetch('../cursos.csv');
     const text = await response.text();
-    const rows = text.split('\n').slice(1); // Ignorar la primera fila (cabecera)
 
+    // Ignorar la primera fila (cabecera)
+    const rows = parseCSV(text).slice(1);
+
+    // Mapear las filas a objetos de curso
     const courses = rows.map(row => {
-        const columns = row.split(',');
-
-        // Asegúrate de que la fila tiene el número correcto de columnas
-        if (columns.length < 6) return null;
-
-        const [id, title, description, duration, rutapdf, rutaimg] = columns.map(col => col.replace(/"/g, '').trim());
+        const [id, title, description, duration, rutapdf, rutaimg] = row;
 
         return {
             id: parseInt(id, 10),
-            title,
-            description,
-            duration,
-            rutapdf: '../pdfs/cursos/' + rutapdf, // Asegúrate de que aquí está la ruta correcta
-            rutaimg: '../images/cursos/' + rutaimg // Asegúrate de que aquí está la ruta correcta
+            title: title.replace(/"/g, '').trim(),
+            description: description.replace(/"/g, '').trim(),
+            duration: duration.replace(/"/g, '').trim(),
+            rutapdf: '../pdfs/cursos/' + rutapdf.replace(/"/g, '').trim(),
+            rutaimg: '../images/cursos/' + rutaimg.replace(/"/g, '').trim()
         };
-    }).filter(course => course && course.id); // Filtrar cursos con ID válido
+    }).filter(course => course.id); // Filtrar cursos con ID válido
 
-    return courses;
+    return courses; // Retornamos los cursos procesados
 }
 
 function createCourseCard(course) {
@@ -42,9 +84,9 @@ function createCourseCard(course) {
 }
 
 async function renderCourses() {
-    const courses = await loadCourses();
+    const courses = await loadCourses(); // Esperamos los cursos cargados
     const courseList = document.getElementById('courseList');
-    courseList.innerHTML = courses.map(createCourseCard).join('');
+    courseList.innerHTML = courses.map(createCourseCard).join(''); // Renderizamos las tarjetas
 }
 
 document.addEventListener('DOMContentLoaded', renderCourses);

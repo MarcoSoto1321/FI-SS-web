@@ -93,13 +93,12 @@ body {
 }
 
 /* Para pantallas pequeñas */
-/* Para pantallas pequeñas */
 @media (max-width: 768px) {
     .nav-list {
         display: none;
         flex-direction: column;
     }
-
+    
     .hamburguer {
         display: block;
     }
@@ -112,33 +111,30 @@ body {
         width: 100%;
     }
 
-    /* Ocultar submenús por defecto */
     .dropdown {
+        position: static;
         display: none;
-        flex-direction: column;
-        position: absolute; /* Cambiar a absolute para que el submenú flote */
-        background-color: white;
-        z-index: 10;
         width: 100%;
+    }
+
+    .nav-item:active > .dropdown,
+    .dropdown-item:active > .dropdown {
+        display: block;
+    }
+
+    .nav-item.active > .dropdown {
+        display: block;
+    }
+
+    .nav-link, .dropdown-link {
+        padding: 1rem;
     }
 
     /* Mostrar submenú cuando el enlace tiene focus o es clicado */
     .nav-item .nav-link:focus + .dropdown, 
     .nav-item .nav-link:active + .dropdown {
-        display: flex;
-    }
-
-    .dropdown-item {
-        width: 100%;
-    }
-
-    .nav-link, .dropdown-link {
-        padding: 1rem;
         display: block;
+        
     }
 
-    /* Asegurarse de que el dropdown ocupe todo el ancho */
-    .dropdown-link {
-        width: 100%;
-    }
 }
