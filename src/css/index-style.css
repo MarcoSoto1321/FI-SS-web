@@ -308,3 +308,11 @@ body {
     margin: 0;
     border: #000 2px solid;
 }
+
+.a_index{
+    text-decoration: none;
+    
+}
+.a_index:visited{
+    color: #333;
+}

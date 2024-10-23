@@ -1,0 +1,31 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    background: #fff; 
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5))
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+}
+
+.convocatoria{
+    margin: auto;
+    display: flex;
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .convocatoria{
+        margin: auto;
+        display: flex;
+        max-width: 350px;
+    }
+}

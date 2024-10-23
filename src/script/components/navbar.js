@@ -41,17 +41,14 @@ class NavbarComponent extends HTMLElement {
                             <li class="dropdown-item">
                                 <a href="../pages/becarios-registro.html" class="dropdown-link">Registro</a>
                             </li>
+                            <li class="dropdown-item">
+                                <a href="../pages/becarios-convocatoria.html" class="dropdown-link">Convocatoria</a>
+                            </li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Cursos</a>
+                        <a href="../pages/cursos-temario.html" class="nav-link">Cursos</a>
                         <ul class="dropdown">
-                            <li class="dropdown-item">
-                                <a href="../pages/cursos-calendario.html" class="dropdown-link">Calendario</a>
-                            </li>
-                            <li class="dropdown-item">
-                                <a href="../pages/cursos-temario.html" class="dropdown-link">Temario</a>
-                            </li>
                         </ul>
                     </li>
                     <li class="nav-item">
