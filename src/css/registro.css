@@ -65,6 +65,20 @@ select {
     cursor: pointer;
 }
 
+.elementos div h3{
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+.elementos div p{
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
 .privacidad {
     display: flex;
     align-items: center;
