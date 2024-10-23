@@ -1,3 +1,4 @@
+
 .elementos img {
     max-width: 50vw;
     padding: 3rem 0;
@@ -6,5 +7,3 @@
 @media screen and (max-width: 1025px) {
     .elementos img {
         max-width: 90vw;
-    }
-}
