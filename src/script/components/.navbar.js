@@ -15,11 +15,6 @@ class NavbarComponent extends HTMLElement {
         </head>
         <body>
             <nav class="navbar">
-                <div class="logo-container">
-                    <a href="https://www.unam.mx/"><img src="../images/Encabezado/UNAM.png" alt="Escudo 1"></img></a>
-                    <a href="https://www.ingenieria.unam.mx/"><img src="../images/Encabezado/FI2.png" alt="Escudo 2"></img></a>
-                    <img src="../images/Encabezado/logo_die2.png" alt="Escudo 1"></img>
-                </div>
                 <input type="checkbox" id="toggle" class="toggle">
                 <label for="toggle" class="hamburguer">☰</label>
                 <ul class="nav-list">

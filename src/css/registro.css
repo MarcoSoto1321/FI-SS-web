@@ -1,7 +1,16 @@
+body {
+    background-size: cover;
+    background-position: center;
+    background-image:  url(../images/background/Fondo.jpg);
+    background-size: auto 100%;
+    background-position: center;
+}
+
 .content {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(../images/background/Fondo.jpg);
 }
 
 .registro {
@@ -14,9 +23,17 @@
     padding: 2vw 0;
     text-align: center;
     border-radius: 36px;
-    background: #ffffff;
-    /* box-shadow: inset -22px -22px 15px #d6d6d6,
-    inset 22px 22px 15px #ffffff; */
+    background: rgba(197, 221, 228, 0.4);
+    opacity: 0;
+    transform: translateY(200px);
+    animation: fadeInUp 4s forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 0.9;
+        transform: translateY(0);
+    }
 }
 
 .elementos {
