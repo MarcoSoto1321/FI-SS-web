@@ -53,7 +53,6 @@ class NavbarComponent extends HTMLElement {
                         </ul>
                     </li>
                     <li class="nav-item">
-
                         <a href="#" class="nav-link">Cursos</a>
                         <ul class="dropdown">
                             <li class="dropdown-item">
@@ -64,7 +63,6 @@ class NavbarComponent extends HTMLElement {
                             </li>
                             
                         </ul>
-
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">Plataformas Educativas</a>
