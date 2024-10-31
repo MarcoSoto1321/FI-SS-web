@@ -44,17 +44,27 @@ class NavbarComponent extends HTMLElement {
                         <a href="#" class="nav-link">Programa de Becarios</a>
                         <ul class="dropdown">
                             <li class="dropdown-item">
-                                <a href="../pages/becarios-registro.html" class="dropdown-link">Registro</a>
-                            </li>
-                            <li class="dropdown-item">
                                 <a href="../pages/becarios-convocatoria.html" class="dropdown-link">Convocatoria</a>
                             </li>
+                            <li class="dropdown-item">
+                                <a href="../pages/becarios-registro.html" class="dropdown-link">Registro</a>
+                            </li>
+                            
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a href="../pages/cursos-temario.html" class="nav-link">Cursos</a>
+
+                        <a href="#" class="nav-link">Cursos</a>
                         <ul class="dropdown">
+                            <li class="dropdown-item">
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLScGRw5pPQwgY2e4MKzFQkw8zuiy6osJ7G3xvRHI1bYKB1sKNQ/viewform" class="dropdown-link">Registro</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="../pages/cursos-temario.html" class="dropdown-link">Temarios</a>
+                            </li>
+                            
                         </ul>
+
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">Plataformas Educativas</a>
