@@ -44,11 +44,12 @@ class NavbarComponent extends HTMLElement {
                         <a href="#" class="nav-link">Programa de Becarios</a>
                         <ul class="dropdown">
                             <li class="dropdown-item">
-                                <a href="../pages/becarios-registro.html" class="dropdown-link">Registro</a>
-                            </li>
-                            <li class="dropdown-item">
                                 <a href="../pages/becarios-convocatoria.html" class="dropdown-link">Convocatoria</a>
                             </li>
+                            <li class="dropdown-item">
+                                <a href="../pages/becarios-registro.html" class="dropdown-link">Registro</a>
+                            </li>
+                            
                         </ul>
                     </li>
                     <li class="nav-item">
