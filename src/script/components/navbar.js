@@ -59,9 +59,8 @@ class NavbarComponent extends HTMLElement {
                                 <a href="https://docs.google.com/forms/d/e/1FAIpQLScGRw5pPQwgY2e4MKzFQkw8zuiy6osJ7G3xvRHI1bYKB1sKNQ/viewform" class="dropdown-link">Registro</a>
                             </li>
                             <li class="dropdown-item">
-                                <a href="../pages/cursos-temario.html" class="dropdown-link">Temarios</a>
+                                <a href="../pages/cursos-temario.html" class="dropdown-link">Temario</a>
                             </li>
-                            
                         </ul>
                     </li>
                     <li class="nav-item">
