@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 8vw;
 }
 
 .course-section {
@@ -94,6 +95,9 @@
 @media (max-width: 768px) {
     .course-grid {
         grid-template-columns: 1fr;
+    }
+    .content {
+        margin-top: 25vw;
     }
 }
 

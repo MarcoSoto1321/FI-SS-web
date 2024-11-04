@@ -11,6 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     background-image: url(../images/background/Fondo.jpg);
+    margin-top: 8vw;
 }
 
 .registro {
@@ -74,7 +75,7 @@ select {
     border-radius: 6px;
     background: #193c6b;
     color: #ffffff;
-    box-shadow: inset -22px -22px 15px #15325a, 
+    box-shadow: inset -22px -22px 15px #15325a,
                 inset 22px 22px 15px #1d467c;
     font-size: 16px;
     padding: 10px;
@@ -167,6 +168,9 @@ input[type="number"]::-webkit-outer-spin-button {
 
 
 @media screen and (max-width: 820px){
+    .content {
+        margin-top: 25vw;
+    }
     .nombres{
         flex-direction: column;
     }

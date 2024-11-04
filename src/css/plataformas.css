@@ -10,6 +10,7 @@
 
 .platforms_container{
     background: white;
+    margin-top: 8vw;
 }
 
 #cuerpo{
@@ -41,4 +42,10 @@ a{
 
 .platforms_li{
     padding: 5px 10px;
+}
+
+@media (max-width: 768px) {
+    .platforms_container {
+        margin-top: 25vw;
+    }
 }

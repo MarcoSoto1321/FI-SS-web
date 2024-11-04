@@ -21,10 +21,21 @@ body {
     background: linear-gradient(to bottom, #F2F2F2, rgba(242, 242, 242, 0));
     /* border-top: 2.5px #cd171e solid;
     border-bottom: 2.5px #cd171e solid; */
+    
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 1rem;
+}
+
+.navbar-scrolled {
+    background-color: #193c6b; /* Color al hacer scroll */
+    display: block;
 }
 
 .nav-list {
@@ -42,7 +53,7 @@ body {
 }
 
 .logo-container img {
-    max-height: 100px;
+    max-height: 75px;
     margin-right: 1rem;
 }
 
@@ -59,16 +70,15 @@ body {
 }
 
 .nav-link:hover {
-    background-color: #e5e7eb;
+    background-color: rgba(229, 231, 235, 0.1);
 }
 
 .dropdown {
     display: none;
     position: absolute;
-    background-color: #fff;
     padding: 0;
     margin: 0;
-    background-color: #F2F2F2;
+    background-color: rgba(242, 242, 242, 0.8);
     box-shadow: 0 8px 16px rgba(0,0,0,0.1);
     z-index: 3;
     min-width: 200px;
@@ -89,7 +99,7 @@ body {
 }
 
 .dropdown-link:hover {
-    background-color: #e5e7eb;
+    background-color: rgba(229, 231, 235, 0.1);
 }
 
 .nav-item:hover > .dropdown,
