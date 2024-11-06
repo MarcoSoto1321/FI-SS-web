@@ -11,11 +11,39 @@ function handleFileSelect(inputElement, labelElement) {
     });
 }
 
-// Asignar la función a cada input de tipo file
-const fotoInput = document.getElementById('foto');
-const fotoLabel = document.querySelector('label[for="foto"]');
-handleFileSelect(fotoInput, fotoLabel);
+// Obtener referencia al formulario
+const form = document.getElementById('registro-form');
 
-const historialInput = document.getElementById('historial');
-const historialLabel = document.querySelector('label[for="historial"]');
-handleFileSelect(historialInput, historialLabel);
+// Función para guardar los datos en localStorage
+function saveFormData() {
+    const formData = new FormData(form);
+    const data = {};
+
+    for (let [key, value] of formData.entries()) {
+        // No almacenamos los archivos en localStorage
+        if (key !== 'foto' && key !== 'historial') {
+            data[key] = value;
+        }
+    }
+
+    localStorage.setItem('formData', JSON.stringify(data));
+}
+
+// Función para cargar los datos desde localStorage
+function loadFormData() {
+    const savedData = localStorage.getItem('formData');
+    if (savedData) {
+        const data = JSON.parse(savedData);
+        for (let key in data) {
+            if (form.elements[key]) {
+                form.elements[key].value = data[key];
+            }
+        }
+    }
+}
+
+// Evento para guardar datos cuando el usuario cambia un campo
+form.addEventListener('input', saveFormData);
+
+// Cargar los datos cuando la página se carga
+window.addEventListener('load', loadFormData);
